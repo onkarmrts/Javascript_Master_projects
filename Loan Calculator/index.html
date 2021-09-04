@@ -10,11 +10,11 @@
 <body>
     <div id="loancal">
         <h1>Loan Calculator</h1>
-        <p>Loan Amount: $<input id="amount" type="number" min="1" max="5000000" ></p>
-        <p>Interest Rate: %<input id="interest_rate" min="0" max="100" value="10" step=".1" ></p>
-        <p>Months to Pay: <input id="months" type="number" min="1" max="300" value="1" step="1" ></p>
+        <p>Loan Amount: $<input id="amount" onchange="computeLoan()" type="number" min="1" max="5000000" ></p>
+        <p>Interest Rate: %<input id="interest_rate" onchange="computeLoan()" min="0" max="100" value="10" step=".1" ></p>
+        <p>Months to Pay: <input id="months" onchange="computeLoan()" type="number" min="1" max="300" value="1" step="1" ></p>
         
-        <button onclick="computeLoan()">calculate payment </button>
+       
         <h2 id="payment"></h2>
         
 
